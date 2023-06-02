@@ -1,0 +1,21 @@
+.hamb 
+    display: flex
+    align-items: center
+.hamb__field 
+    cursor: pointer
+.bar 
+    display: block
+    width: 5rem
+    height: 4px
+    margin: .7rem auto
+    background-color: #1FA181
+    transition: 0.2s
+.hamb__field.active .bar:nth-child(2) 
+    opacity: 0
+.hamb__field.active .bar:nth-child(1)   
+    transform: translateY(.9rem) rotate(45deg)
+.hamb__field.active .bar:nth-child(3) 
+    transform: translateY(-.9rem) rotate(-45deg)
+.hamb 
+    display: none
+    
